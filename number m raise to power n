@@ -1,0 +1,16 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
+void power(double m,int n)
+{
+	float answer;
+	answer=pow(m,n);
+	cout<<answer;
+}
+int main()
+{
+	double m;
+	int n;
+	cin>>m>>n;
+	power(m,n);
+}
