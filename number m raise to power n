@@ -1,7 +1,7 @@
 #include<iostream>
 #include<cmath>
 using namespace std;
-void power(double m,int n)
+void power(double m,int n=2)
 {
 	float answer;
 	answer=pow(m,n);
@@ -11,6 +11,18 @@ int main()
 {
 	double m;
 	int n;
-	cin>>m>>n;
-	power(m,n);
+	cout<<"enter value of m:";
+	cin>>m;
+	cout<<"enter value of n:";
+	cin>>n;
+	if(n==0)
+	{
+			cout<<"the output is";
+		power(m);
+	}
+	else
+	{
+			cout<<"the output is";
+		power(m,n);
+	}
 }
