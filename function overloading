@@ -28,7 +28,7 @@ int main()
 		cin >> n;
 		power(n);
 	}
-	if(choice==2)
+	else if(choice==2)
 	{
 		cout<< "enter value: ";
 		cin >> n;
