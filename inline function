@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int max(int x,int y)
+{
+	if(x>y)
+	cout<<x;
+	else if(x<y)
+	cout<<y;
+	return 0;
+}
+int main()
+{
+	cout<<"Maximum(45,34):";
+	max(45,34);
+	cout<<endl;
+	cout<<"Maximum(504,174):";
+	max(504,174);
+	cout<<endl;
+	cout<<"Maximum(240,1000):";
+	max(240,1000);
+	return 0;
+}
