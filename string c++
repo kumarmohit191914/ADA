@@ -1,0 +1,51 @@
+#include<iostream>
+#include<string.h>
+#include<cmath>
+using namespace std;
+class str
+{
+	public:
+	string str1,str2,str3;
+	void add(string a,string b)
+	{
+		str1=a;
+		str2=b;
+		str3=str1+str2;
+		cout<<"Addition of Strings is: "<<str3;
+	}
+	void cmp(string a,string b)
+	{
+		str1=a;
+		str2=b;
+		if(str1==str2)
+		{
+			cout<<"Strings are same.";
+		}
+		else
+		{
+			cout<<"Strings are not same.";
+		}
+	}
+		void display(string a,string b)
+	{
+		str1=a;
+		str2=b;
+		cout<<"First String is: "<<str1<<endl;
+		cout<<"Second String is: "<<str2;
+	}
+};
+int main()
+{
+	str s1;
+	string str1,str2;
+	cout<<"Enter First String: "; 	cin>>str1;
+	cout<<"Enter Second String: ";	cin>>str2;
+	cout<<"=========================================================================================="<<endl;
+	s1.add(str1,str2);
+	cout<<endl;
+	cout<<"=========================================================================================="<<endl;
+	s1.cmp(str1,str2);
+	cout<<endl;
+	cout<<"=========================================================================================="<<endl;
+	s1.display(str1,str2);
+}
