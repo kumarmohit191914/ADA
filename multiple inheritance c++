@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+class A
+{
+	public: 
+	int x;
+	int y;
+	int z;
+	void sum(int x,int y)
+	{
+		z=x+y;
+		cout<<"Sum is: "<<z<<endl;
+	}
+};
+class B
+{
+	public: 
+	int x;
+	int y;
+	int z;
+	void sub(int x,int y)
+	{
+		z=x-y; 
+		cout<<"Sub is: "<<z;
+	}
+};
+class C: public A,public B
+{
+	public:
+	void print(int x,int y)
+	{
+	cout<<"The value of x is: "<<x<<endl;
+	cout<<"The value of y is: "<<y<<endl;
+	}
+};
+int main()
+{
+	C o;
+	o.print(10,20);
+	o.sum(10,20);
+	o.sub(20,30);
+}
